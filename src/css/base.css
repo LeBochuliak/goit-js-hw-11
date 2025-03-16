@@ -107,8 +107,11 @@ main:has(.back-link) {
 .form-btn:hover {
   background: #6c8cff;
 }
-#loader {
+.loader {
   margin: 0 auto;
+}
+.loader.hidden {
+  display: none;
 }
 .gallery{
   width: 1128px;

@@ -5,6 +5,8 @@ import "izitoast/dist/css/iziToast.min.css";
 
 import iconError from "../img/error.png";
 
+const formInput = document.querySelector(".form-input");
+
 export default function axiosGet(inputValue) {
     return axios.get("https://pixabay.com/api/", {
         
@@ -20,7 +22,7 @@ export default function axiosGet(inputValue) {
             if (response.data.hits.length === 0) {
                 iziToast.show({
                     message: 'Sorry, there are no images matching your search query. Please try again!',
-                    backgroundColor: "red",
+                    backgroundColor: "#ef4040",
                     messageColor: "white",
                     position: "topRight",
                     transitionIn: "fadeIn",
