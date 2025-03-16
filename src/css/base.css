@@ -23,6 +23,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -115,6 +116,7 @@ main:has(.back-link) {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 80px;
 }
 
 .gallery-item {
