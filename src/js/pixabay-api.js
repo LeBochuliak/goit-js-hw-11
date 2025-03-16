@@ -35,7 +35,14 @@ export default function axiosGet(inputValue) {
             return response.data.hits;
         })
         .catch(error => {
-            console.log(error);
+            iziToast.show({
+                    message: `An unexpected error occurred: ${error.message || error}`,
+                    backgroundColor: "#ef4040",
+                    messageColor: "white",
+                    position: "topRight",
+                    transitionIn: "fadeIn",
+                    iconUrl: iconError
+                });
         });
 };
   
