@@ -6,7 +6,7 @@ import "izitoast/dist/css/iziToast.min.css";
 import iconError from "../img/error.png";
 
 export default function axiosGet(inputValue) {
-    return axios.get("https://pixabay.com/api", {
+    return axios.get("https://pixabay.com/api/", {
         
         params: {
             key: "49360520-b72380be0a18495ea370d4b42",
@@ -29,6 +29,7 @@ export default function axiosGet(inputValue) {
                 });
                 return;
             }
+            
             return response.data.hits;
         })
         .catch(error => {
